@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vector Space Model</title>
+	<style>
+		body{
+			margin-top :200px;
+			background-color:lightgray;
+			font-weight:Bold;
+			font-size:200%;
+			color:darkgreen;
+			}
+		input{
+			font-weight:Bold;
+			font-size:100%;
+			color:darkblue;
+			margin-left:30px;
+			}
+		#p2{
+			margin-left:70%;
+			padding-left: 0%;
+		    margin-bottom: -240px; 
+			color:darkblue;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<form action="/form" method="POST">
+		<label>Enter Query : </label>
+		<input type="text" name="x"><br><br>
+		<input type="submit" value="Show Sim" name="s"><input type="submit" value="Random Generate" name="r">
+	</form></center>
+<br>
+<p id="p2">CosSim to Query is :<br>
+{{x}}
+<br>	
+{{y}}
+<br>
+{{z}}
+<br>
+{{c}}
+<br>
+{{b}}</p>
+<p id="p1">Authority and Hub Sim is :<br>
+	Authority<br>{{a}}<br>
+	Hub<br>{{h}}<br>
+</p>	
+<div  align="left">
+	<embed type="image/svg+xml" src="{{graph_data}}" style="max-width:800px"/>
+</div>
+</body>
+</html>
